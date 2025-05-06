@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TipsyTurn - Your Small Mart</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script defer>
+    // Mobile menu toggle (basic)
+    function toggleMenu() {
+      document.getElementById("nav-menu").classList.toggle("hidden");
+    }
+  </script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-green-600 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">TipsyTurn</h1>
+      <button onclick="toggleMenu()" class="sm:hidden focus:outline-none">
+        ☰
+      </button>
+      <nav id="nav-menu" class="hidden sm:flex space-x-4">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#products" class="hover:underline">Products</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-12 bg-white">
+    <h2 class="text-4xl font-bold mb-4">Welcome to TipsyTurn</h2>
+    <p class="text-gray-700 text-lg max-w-xl mx-auto">
+      Your one-stop shop for everyday essentials at unbeatable prices.
+    </p>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="container mx-auto py-10 px-4">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Featured Products</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      
+      <!-- Product Card Template -->
+      <div class="bg-white p-4 shadow rounded hover:shadow-lg transition">
+        <img src="serum.jpg" alt="Facial Serum" class="w-full h-40 object-cover rounded" />
+        <h4 class="text-lg font-bold mt-2">Facial Serum</h4>
+        <p class="text-gray-600">Revitalize your skin with our hydrating facial serum.</p>
+        <p class="text-green-700 font-bold mt-1">$15.00</p>
+        <button class="mt-2 bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700">Buy Now</button>
+      </div>
+
+      <div class="bg-white p-4 shadow rounded hover:shadow-lg transition">
+        <img src="eng.webp" alt="Energy Drink" class="w-full h-40 object-cover rounded" />
+        <h4 class="text-lg font-bold mt-2">Energy Drink</h4>
+        <p class="text-gray-600">Stay energized all day with our powerful formula.</p>
+        <p class="text-green-700 font-bold mt-1">$12.50</p>
+        <button class="mt-2 bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700">Buy Now</button>
+      </div>
+
+      <div class="bg-white p-4 shadow rounded hover:shadow-lg transition">
+        <img src="dot.webp" alt="Organic Tea" class="w-full h-40 object-cover rounded" />
+        <h4 class="text-lg font-bold mt-2">Organic Tea</h4>
+        <p class="text-gray-600">Relax with a soothing cup of premium organic tea.</p>
+        <p class="text-green-700 font-bold mt-1">$8.75</p>
+        <button class="mt-2 bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700">Buy Now</button>
+      </div>
+
+      <div class="bg-white p-4 shadow rounded hover:shadow-lg transition">
+        <img src="adil.jpg" alt="Reusable Water Bottle" class="w-full h-40 object-cover rounded" />
+        <h4 class="text-lg font-bold mt-2">Water Bottle</h4>
+        <p class="text-gray-600">Eco-friendly, stylish, and perfect for hydration on-the-go.</p>
+        <p class="text-green-700 font-bold mt-1">$5.75</p>
+        <button class="mt-2 bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700">Buy Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-green-50 py-10 px-4">
+    <div class="container mx-auto text-center">
+      <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>
+      <p class="text-gray-700 mb-2">
+        <a href="mailto:contact@TipsyTurn.com" class="underline">contact@TipsyTurn.com</a>
+      </p>
+      <p class="text-gray-700">Phone: <a href="tel:+918527284518" class="underline">+91 85272 84518</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white p-4 text-center">
+    <p>&copy; 2025 TipsyTurn. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
